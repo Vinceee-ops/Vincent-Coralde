@@ -16,7 +16,7 @@ function Main() {
           transition={{ duration: 0.8 }}
           className="text-white text-center lg:text-left mb-8 lg:mb-0"
         >
-          <h1 className='font-bebas text-4xl md:text-5xl lg:text-8xl'>HI, I AM<br />VINCENT CORALDE.</h1>
+          <h1 className='font-bebas text-4xl md:text-5xl lg:text-7xl'>HI, I AM<br />VINCENT CORALDE.</h1>
           <p className='text-[#C7C7C7] text-base md:text-xl mt-4'>
             A Computer Engineering student passionate about building 
             <br className="hidden md:block" /> accessible and user-friendly systems.

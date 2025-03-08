@@ -14,7 +14,7 @@ function About() {
             transition={{ duration: 0.8 }}
             className="text-white mb-8 lg:mb-0"
           >
-            <h1 className="font-bebas text-5xl lg:text-8xl leading-none">ABOUT ME</h1>
+            <h1 className="font-bebas text-5xl lg:text-7xl leading-none">ABOUT ME</h1>
           </motion.div>
 
           {/* Right Section */}

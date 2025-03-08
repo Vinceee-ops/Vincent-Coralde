@@ -40,7 +40,7 @@ function Services() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h1 className="font-bebas text-5xl lg:text-8xl text-white">SERVICES</h1>
+          <h1 className="font-bebas text-5xl lg:text-7xl text-white">SERVICES</h1>
           <p className="text-[#C7C7C7] text-lg lg:text-xl mt-4">
             Here’s what I can do for you.
           </p>

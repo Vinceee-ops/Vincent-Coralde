@@ -41,14 +41,14 @@ function Navbar() {
             isSidebarOpen ? "hidden" : ""
           } space-x-10 text-lg text-white hidden lg:flex md:text-md`}
         >
-          {["Home", "About", "Services"].map((item) => (
+          {["Home", "About", "Services","Contact"].map((item) => (
             <li key={item} className="nav-item">
               <button>
                 <Link
                   to={item}
                   spy={true}
                   smooth={true}
-                  offset={-100}
+                  offset={-window.innerHeight / 15} 
                   duration={500}
                   onClick={closeSidebar}
                   className="hover:font-semibold"
@@ -109,14 +109,14 @@ function Navbar() {
           </svg>
         </button>
         <ul className="text-center text-2xl space-y-8">
-          {["Home", "About", "Portfolio", "FAQ"].map((item) => (
+          {["Home", "About", "Services", "Contact"].map((item) => (
             <li key={item} className="py-2">
               <button>
                 <Link
                   to={item}
                   spy={true}
                   smooth={true}
-                  offset={-100}
+                  offset={-window.innerHeight / 15} 
                   duration={500}
                   onClick={closeSidebar}
                   className="hover:font-semibold"
