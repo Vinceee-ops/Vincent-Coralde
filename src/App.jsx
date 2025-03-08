@@ -4,7 +4,7 @@ import AppRoutes from './Routes/AppRoutes';
 const App = () => {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Vincent-Coralde">
       <Routes>
           {AppRoutes.map((route, index) => {
             const { element, path } = route; 
