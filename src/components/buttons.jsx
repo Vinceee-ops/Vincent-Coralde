@@ -8,12 +8,12 @@ export const ContactMeButton = () => {
       to="Contact" 
       spy={true}
       smooth={true}
-      offset={-window.innerHeight / 15} 
+      offset={-80} 
       duration={500}
-      className="flex items-center bg-[#D3E97A] hover:bg-[#a6c238] text-black font-manrope font-semibold py-2 px-4 md:py-3 md:px-6 rounded-3xl transition duration-200 ease-in-out text-sm md:text-md lg:text-lg shadow-lg space-x-2 md:space-x-3 cursor-pointer"
+      className="inline-flex items-center space-x-2 bg-[#D3E97A] hover:bg-[#C4E06A] text-black font-manrope font-bold py-3 px-6 rounded-full transition-all duration-300 text-sm md:text-base shadow-glow-accent hover:shadow-glow-accent-lg hover:scale-105 cursor-pointer"
     >
       <span>Contact Me</span>
-      <GoDotFill size={20} />
+      <GoDotFill size={18} className="text-black animate-pulse" />
     </Link>
   );
 };

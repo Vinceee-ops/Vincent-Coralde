@@ -1,17 +1,93 @@
-@import '@fontsource/manrope/400.css'; /* Regular weight */
+@import '@fontsource/bebas-neue/index.css';
+@import '@fontsource/manrope/400.css';
+@import '@fontsource/manrope/500.css';
+@import '@fontsource/manrope/600.css';
+@import '@fontsource/manrope/700.css';
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.hover-effect:hover {
-    transform: scale(1.1);
-    transition: transform 0.2s ease-in-out;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Manrope', sans-serif;
+    background-color: #07090e;
+    color: #e5e7eb;
   }
 
+  ::selection {
+    background-color: #D3E97A;
+    color: #07090e;
+  }
+}
 
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
 
+::-webkit-scrollbar-track {
+  background: #07090e;
+}
 
+::-webkit-scrollbar-thumb {
+  background: #1d2538;
+  border-radius: 4px;
+}
 
+::-webkit-scrollbar-thumb:hover {
+  background: #D3E97A;
+}
 
+/* Cyber Matrix Background Grid */
+.bg-cyber-grid {
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
 
+.bg-radial-vignette {
+  background: radial-gradient(circle at 50% 20%, rgba(211, 233, 122, 0.07) 0%, transparent 60%);
+}
+
+.bg-radial-accent {
+  background: radial-gradient(circle at 80% 50%, rgba(211, 233, 122, 0.05) 0%, transparent 50%);
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(16, 21, 32, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel:hover {
+  border-color: rgba(211, 233, 122, 0.25);
+}
+
+.glass-nav {
+  background: rgba(7, 9, 14, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.hover-effect:hover {
+  transform: translateY(-2px) scale(1.05);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Glowing text and borders */
+.text-glow {
+  text-shadow: 0 0 20px rgba(211, 233, 122, 0.4);
+}
+
+.border-glow {
+  box-shadow: 0 0 15px rgba(211, 233, 122, 0.2);
+}
